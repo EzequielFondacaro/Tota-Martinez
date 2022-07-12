@@ -101,13 +101,13 @@ table tr td{
     justify-items: center;
   }
   .galeria__container--img {
-    width: 325px;
-    height: 325px;
+    width: 320px;
+    height: 320px;
     transition: 0.3s ease all;
     filter: grayscale(1);
   }
   .galeria__container--img:hover {
-    transform: scale(1.08);
+    transform: scale(1.05);
     filter: grayscale(0);
   }
 /* Boton Galeria */
