@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Fondo y Header Página Completa */
+
+body{
+    background-color: #ffdff7;
+}
+header{
+    background-color: black;
+    border: solid 3px black;
+}
+header a{
+    text-decoration: none;
+}
+.liheader{
+    display: inline-block;
+    margin: 20px;
+    font-size: 20px;
+    font-family: 'Berkshire Swash', cursive;
+}
+ul li a{
+    color: #ffdff7;
+}
+
+.ulheader{
+    margin: 0 auto;
+    width: fit-content;
+}
+/* Index */
+/* Foto Logo Index */
+
+.fotoIndex{
+    width: 100%;
+    opacity: 50%;
+}
+.logoIndex{
+    position: absolute;
+    width: 38%;
+    right: 1%;
+    top: 2%;
+}
+.section__index--img{
+    position: relative;
+}
+
+/* Redes */
+
+.redes{
+    width: 70px;
+    height: 70px;
+}
+.sectionRedes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-row-gap: 1px;
+    justify-items: center;
+}
+
+.wp{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+/* Footer Página completa */
+.copyright{
+    width: fit-content;
+    margin: auto;
+    bottom: 0;
+    color: #ffdff7;
+}
+footer{
+    background-color: black;
+    border: solid 1px #ffdff7;
+}
+/* Tabla Galeria */
+.sectiontablagaleria{
+    padding: 15px;
+}
+.tablagaleria{
+    border: solid 2px black;
+    margin: 0 auto;
+    width: 35%;    
+}
+table tr td{
+    border: solid 2px black;
+    text-align: center;
+    width: 50%;
+}
+/* Galeria */
+/* Carrusel Galería */
+.galeria__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 5px;
+    justify-items: center;
+  }
+  .galeria__container--img {
+    width: 325px;
+    height: 325px;
+    transition: 0.3s ease all;
+    filter: grayscale(1);
+  }
+  .galeria__container--img:hover {
+    transform: scale(1.08);
+    filter: grayscale(0);
+  }
+/* Boton Galeria */
+.divbotongaleria{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+/* Ubicación */
+.sectionmapa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+.pubicacion{
+    border: solid 1px black;
+    width: 90%;
+    margin: 0 auto;
+}
+.h1ubicacion{
+    margin: 0 auto;
+    width: fit-content;
+    padding: 15px;
+}
+.divubicacion{
+    width: fit-content;
+    padding: 10px;
+}
+/* Mapa */
+.mapa{
+    width: 100%;
+    border: solid 1px black;
+}
+/* Contacto */
+/* FORM */
+.form{
+    border: solid 2px black;
+    width: 80%;
+    margin: 0 auto;
+}
+.form h2{
+    margin: 0 auto;
+}
+.sectionclass{
+       padding: 15px;
+}
+.divform{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 20px;
+}
+.novedades{
+    width: fit-content;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 20px;
+}
+.botonesform{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    margin: 20px;
+}
+/* Quienes Somos */
+/* imagenes */
+.imgquienesomos{
+    width: 650px;
+    margin: 0 auto;
+}
+.divimgquienesomos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px;
+}
+/* Texto y Titulo */
+.divtypquienesomos p{
+    width: 100%;
+    border: solid 1px black;
+    padding: 15px;
+}
+.divtypquienesomos h2{
+    text-align: center;
+    padding: 15px;
+}
+.divtypquienesomos{
+    margin: 0 auto;
+    width: 80%;
+}
+
+@media only screen and (max-width: 768px) {
+    header{
+        background-color: black;
+        border: solid 3px black;
+    }
+    header a{
+        text-decoration: none;
+    }
+    .liheader{
+        display: inline-block;
+        margin: 20px;
+        font-size: 15px;
+        font-family: 'Berkshire Swash', cursive;
+    }
+    ul li a{
+        color: #ffdff7;
+    }
+    
+    .ulheader{
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+    /* Index */
+    /* Foto Logo Index */
+
+    .fotoIndex{
+        width: 100%;
+        opacity: 50%;
+    }
+    .logoIndex{
+        position: absolute;
+        width: 38%;
+        right: 1%;
+        top: 2%;
+    }
+    .section__index--img{
+        position: relative;
+    }
+
+    /* Redes */
+
+    .redes{
+        width: 50px;
+        height: 50px;
+    }
+    .sectionRedes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .wp{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+
+    /* Footer Página completa */
+    .copyright{
+        width: fit-content;
+        margin: auto;
+        bottom: 0;
+        color: #ffdff7;
+    }
+    footer{
+        background-color: black;
+        border: solid 1px #ffdff7;
+    }
+}
+@media only screen and (max-width: 320px) {
+    header{
+        background-color: black;
+        border: solid 3px black;
+    }
+    header a{
+        text-decoration: none;
+    }
+    .liheader{
+        display: inline-block;
+        margin: 9px;
+        font-size: 10px;
+        font-family: 'Berkshire Swash', cursive;
+    }
+    ul li a{
+        color: #ffdff7;
+    }
+    
+    .ulheader{
+        margin: 0 auto;
+        width: fit-content;
+    }    
+    /* Index */
+    /* Foto Logo Index */
+
+    .fotoIndex{
+        width: 100%;
+        opacity: 50%;
+    }
+    .logoIndex{
+        position: absolute;
+        width: 38%;
+        right: 1%;
+        top: 2%;
+    }
+    .section__index--img{
+        position: relative;
+    }
+
+    /* Redes */
+
+    .redes{
+        width: 30px;
+        height: 30px;
+    }
+    .sectionRedes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .wp{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+
+    /* Footer Página completa */
+    .copyright{
+        width: fit-content;
+        margin: auto;
+        bottom: 0;
+        color: #ffdff7;
+    }
+    footer{
+        background-color: black;
+        border: solid 1px #ffdff7;
+    }
+}
