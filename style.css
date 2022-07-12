@@ -65,6 +65,9 @@ ul li a{
     bottom: 0;
     right: 0;
 }
+.wp:hover{
+    transform: scale(1.1);
+}
 
 /* Footer Página completa */
 .copyright{
@@ -93,23 +96,22 @@ table tr td{
 }
 /* Galeria */
 /* Carrusel Galería */
-.galeria__container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-row-gap: 5px;
-    justify-items: center;
-  }
-  .galeria__container--img {
-    width: 325px;
-    height: 325px;
-    transition: 0.3s ease all;
+
+.galeriaContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+.carousel-item{
+    width: 600px;
+    height: 600px;
     filter: grayscale(1);
-  }
-  .galeria__container--img:hover {
-    transform: scale(1.08);
+}
+.carousel-item:hover{
     filter: grayscale(0);
-  }
+}
 /* Boton Galeria */
 .divbotongaleria{
     display: flex;
