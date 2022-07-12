@@ -24,6 +24,9 @@ header a{
 ul li a{
     color: #ffdff7;
 }
+.liheader a:hover{
+    color: #ffdff7;
+}
 
 .ulheader{
     margin: 0 auto;
@@ -151,6 +154,7 @@ table tr td{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: auto;
     margin-top: 10px;
 }
 
