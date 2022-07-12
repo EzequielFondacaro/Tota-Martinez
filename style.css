@@ -8,19 +8,23 @@
 body{
     background-color: #ffdff7;
 }
+
 header{
     background-color: black;
     border: solid 3px black;
 }
+
 header a{
     text-decoration: none;
 }
+
 .liheader{
     display: inline-block;
     margin: 20px;
     font-size: 20px;
     font-family: 'Berkshire Swash', cursive;
 }
+
 ul li a{
     color: #ffdff7;
 }
