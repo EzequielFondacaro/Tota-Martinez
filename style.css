@@ -145,35 +145,15 @@ table tr td{
 }
 /* Contacto */
 /* FORM */
-.form{
-    border: solid 2px black;
-    width: 80%;
-    margin: 0 auto;
-}
-.form h2{
-    margin: 0 auto;
-}
-.sectionclass{
-       padding: 15px;
-}
-.divform{
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    margin: 20px;
-}
-.novedades{
-    width: fit-content;
-    justify-content: space-between;
-    padding: 15px;
-    margin: 20px;
-}
-.botonesform{
+
+.sectionForm{
+    width: 70%;
     display: flex;
     flex-direction: row;
-    padding: 15px;
-    margin: 20px;
+    justify-content: center;
+    margin-top: 10px;
 }
+
 /* Quienes Somos */
 /* imagenes */
 .imgquienesomos{

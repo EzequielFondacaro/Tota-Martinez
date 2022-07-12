@@ -33,32 +33,72 @@
             </ul>
         </nav>
     </header>
-    <section class="sectionclass">
-        <form class="form">
-            <h1>Formulario de Contacto</h1>
-            <div class="divform">
-                <label>Nombre y Apellido</label><input type="text">
+    <section class="sectionForm">
+        <form class="row g-3">
+            <div class="col-md-4">
+              <label for="validationDefault01" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="validationDefault01" required>
             </div>
-            <div class="divform">
-                <label>Email</label><input type="email">
+            <div class="col-md-4">
+              <label for="validationDefault02" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="validationDefault02" required>
             </div>
-            <div class="divform">
-                <label>Teléfono</label><input type="number">
+            <div class="col-md-4">
+              <label for="validationDefaultUsername" class="form-label">Email</label>
+              <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+              </div>
             </div>
-            <div class="divform">
-                <label>Provincia</label><input type="text">
+            <div class="col-md-6">
+              <label for="validationDefault03" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="validationDefault03" required>
             </div>
-            <div class="divform">
-                <label>Localidad</label><input type="text">
+            <div class="col-md-3">
+              <label for="validationDefault04" class="form-label">Provincia</label>
+              <select class="form-select" id="validationDefault04" required>
+                <option selected disabled value="">Elegí</option>
+                <option>Buenos Aires</option>
+                <option>Catamarca</option>
+                <option>Chaco</option>
+                <option>Chubut</option>
+                <option>Córdoba</option>
+                <option>Corrientes</option>
+                <option>Entre Rios</option>
+                <option>Formosa</option>
+                <option>Jujuy</option>
+                <option>La Pampa</option>
+                <option>La Rioja</option>
+                <option>Mendoza</option>
+                <option>Misiones</option>
+                <option>Neuquén</option>
+                <option>Río Negro</option>
+                <option>Salta</option>
+                <option>San Juan</option>
+                <option>San Luis</option>
+                <option>Santa Cruz</option>
+                <option>Santa Fe</option>
+                <option>Santiago del Estero</option>
+                <option>Tierra del Fuego</option>
+                <option>Tucumán</option>
+              </select>
             </div>
-            <div class="novedades">
-                <label>¿Desea recibir novedades?</label><label for="si">Si</label><input type="radio" name="novedades" checked><label for="no">No</label><input type="radio" name="novedades">
+            <div class="col-md-3">
+              <label for="validationDefault05" class="form-label">Codigo Postal</label>
+              <input type="text" class="form-control" id="validationDefault05" required>
             </div>
-            <div class="botonesform">
-                <input type="submit" class="submit">
-                <input type="reset" value="Borrar" class="delete">
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                  Deseo recibir novedades sobre promociones y descuentos
+                </label>
+              </div>
             </div>
-        </form>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+          </form>
     </section>
     <main>
         <section>
