@@ -8,43 +8,50 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="./style.css"/>
         <title>Tota Martinez</title>
     </head>
 <body>
-    <header>
-        <nav>
-            <ul class="ulheader">
-                <li class="liheader">
-                    <a href="#">Inicio</a>
-                </li>
-                <li class="liheader">
-                    <a href="./paginas/galeria.html">Galería</a>
-                </li>
-                <li class="liheader">
-                    <a href="./paginas/quienes-somos.html">Quienes Somos</a>
-                </li>
-                <li class="liheader">
-                    <a href="./paginas/contacto.html">Contacto</a>
-                </li>
-                <li class="liheader">
-                    <a href="./paginas/ubicacion.html">Ubicación</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div data-aos="fade-down" data-aos-duration="2000">
+        <header>
+            <nav>
+                <ul class="ulheader">
+                    <li class="liheader">
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li class="liheader">
+                        <a href="./paginas/galeria.html">Galería</a>
+                    </li>
+                    <li class="liheader">
+                        <a href="./paginas/quienes-somos.html">Quienes Somos</a>
+                    </li>
+                    <li class="liheader">
+                        <a href="./paginas/contacto.html">Contacto</a>
+                    </li>
+                    <li class="liheader">
+                        <a href="./paginas/ubicacion.html">Ubicación</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
     <main class="mainIndex">
         <section class="section__index--img">
-            <img src="./imagenes/Bolso Index.jpeg" alt="bolso1-1" class="fotoIndex"> 
-            <img src="./imagenes/Logo Tota.png" alt="logotota" class="logoIndex">
+            <div data-aos="zoom-in-right" data-aos-duration="2000">
+                <img src="./imagenes/Bolso Index.jpeg" alt="bolso1-1" class="fotoIndex"> 
+                <img src="./imagenes/Logo Tota.png" alt="logotota" class="logoIndex">
+            </div>
         </section>
     </main>
     <Section class="descripcionIndex">
-        <div class="shadow-lg p-3 mb-5 bg-dark rounded text-light">
-            <h2>Tota Martínez</h2>
-            <p>
-                Somos un emprendimiento familiar sin fines de lucro, con muchos años en el mercado. Utilizamos materiales de alta calidad y nuestra misión en este mundo es brindarles a nuestras clientas un bolso cómodo, lindo y que sea de su agrado
-            </p>
+        <div data-aos="fade-up" data-aos-duration="3000">
+            <div class="shadow-lg p-3 mb-5 bg-dark rounded text-light">
+                <h2>Tota Martínez</h2>
+                <p>
+                    Somos un emprendimiento familiar sin fines de lucro, con muchos años en el mercado. Utilizamos materiales de alta calidad y nuestra misión en este mundo es brindarles a nuestras clientas un bolso cómodo, lindo y que sea de su agrado
+                </p>
+            </div>
         </div>
     </Section>
     <main>
@@ -55,10 +62,15 @@
         <section>
             <a href="https://web.whatsapp.com" target="_blank"><img src="./IMAGENES/logowhatsapp.png" alt="logowhatsapp" class="redes wp"></a> 
         </section>
+        
     </main>
     <footer>
         <h4 class="copyright">©Copyright Tota Martìnez 2022 - 2023</h4>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
