@@ -18,7 +18,7 @@ header a{
     text-decoration: none;
 }
 
-.liheader{
+.liHeader{
     display: inline-block;
     margin: 20px;
     font-size: 20px;
@@ -28,13 +28,23 @@ header a{
 ul li a{
     color: #ffdff7;
 }
-.liheader a:hover{
+/* .liHeader a:hover{
     color: #ffdff7;
-}
+} */
 
-.ulheader{
+.ulHeader{
     margin: 0 auto;
     width: fit-content;
+}
+.logoNavbar{
+    width: 50px;
+    opacity: 50%;
+}
+.logoNavbar:hover{
+    opacity: 100%;
+}
+ul li .nav-link{
+    color: #ffdff7;
 }
 /* Index */
 /* Foto Logo Index */
@@ -67,8 +77,8 @@ ul li a{
 /* Redes */
 
 .redes{
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
 }
 .sectionRedes{
     display: grid;
@@ -77,7 +87,6 @@ ul li a{
     grid-row-gap: 1px;
     justify-items: center;
 }
-
 .wp{
     position: fixed;
     bottom: 0;
@@ -98,24 +107,40 @@ footer{
     background-color: black;
     border: solid 1px #ffdff7;
 }
-/* Tabla Galeria */
-.sectiontablagaleria{
-    padding: 15px;
-}
-.tablagaleria{
-    border: solid 2px black;
-    margin: 0 auto;
-    width: 35%;    
-}
-table tr td{
-    border: solid 2px black;
-    text-align: center;
-    width: 50%;
-}
 /* Galeria */
 /* Carrusel Galería */
 
-.galeriaContainer{
+.card{
+    display: flex;
+    flex-direction: row;
+    left: 5px;
+    top: 35px;
+    position: relative;
+    filter: grayscale(1);
+}
+.sectionGaleria{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    justify-items: center;
+}
+.card-body{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    opacity: 80%;
+}
+.card-body:hover{
+    transition: hide;
+}
+.card:hover{
+    filter: grayscale(0);
+}
+
+/* .galeriaContainer{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -129,18 +154,18 @@ table tr td{
 }
 .carousel-item:hover{
     filter: grayscale(0);
-}
-.carrousel{
+} */
+/* .carrousel{
     width: 50%;
-}
+} */
 /* Boton Galeria */
-.divbotongaleria{
+.div__boton__galeria{
     display: flex;
     justify-content: center;
     padding: 10px;
 }
 /* Ubicación */
-.sectionmapa{
+.sectionMapa{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -178,27 +203,27 @@ table tr td{
 
 /* Quienes Somos */
 /* imagenes */
-.imgquienesomos{
-    width: 650px;
+.imagenesQS{
+    width: 375px;
     margin: 0 auto;
 }
-.divimgquienesomos{
+.img__quienes__somos{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 15px;
 }
 /* Texto y Titulo */
-.divtypquienesomos p{
+.titulo__quienes__somos p{
     width: 100%;
     border: solid 1px black;
     padding: 15px;
 }
-.divtypquienesomos h2{
+.titulo__quienes__somos h2{
     text-align: center;
     padding: 15px;
 }
-.divtypquienesomos{
+.titulo__quienes__somos{
     margin: 0 auto;
     width: 80%;
 }
