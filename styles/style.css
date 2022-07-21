@@ -89,7 +89,10 @@ footer {
   margin-top: 10px; }
 
 .descripcionIndex p {
-  color: white; }
+  color: #ffdff7; }
+
+.descripcionIndex h2 {
+  color: #ffdff7; }
 
 /* Galeria */
 /* Productos (Cards) */

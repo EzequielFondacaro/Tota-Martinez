@@ -103,7 +103,10 @@ footer{
 }
 .descripcionIndex{
     p{
-        color: white;
+        color: $bg-color-rose
+    }
+    h2{
+        color: $bg-color-rose
     }
 } 
 
