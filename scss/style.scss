@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
 }
+$bg-color-rose: #ffdff7;
 
 /* Fondo y Header Página Completa */
 body{
-    background-color: #ffdff7;
+    background-color: $bg-color-rose
 }
 header{
     background-color: black;
@@ -20,8 +21,12 @@ header{
     font-size: 20px;
     font-family: 'Berkshire Swash', cursive;
 }
-ul li a{
-    color: #ffdff7;
+ul{
+    li{
+        a{
+            color: $bg-color-rose
+        }
+    }
 }
 .ulHeader{
     margin: 0 auto;
@@ -30,24 +35,27 @@ ul li a{
 .logoNavbar{
     width: 50px;
     opacity: 50%;
+    &:hover{
+        opacity: 100%;
+    }
 }
-.logoNavbar:hover{
-    opacity: 100%;
+ul{
+    li {
+        .nav-link{
+            color: $bg-color-rose
+    }
+} 
 }
-ul li .nav-link{
-    color: #ffdff7;
-}
-
 /* Footer Página completa */
 .copyright{
     width: fit-content;
     margin: auto;
     bottom: 0;
-    color: #ffdff7;
+    color: $bg-color-rose
 }
 footer{
     background-color: black;
-    border: solid 1px #ffdff7;
+    border: solid 1px $bg-color-rose
 }
 
 /* Redes */
@@ -66,11 +74,10 @@ footer{
     position: fixed;
     bottom: 0;
     right: 0;
+    &:hover{
+        transform: scale(1.1);
+    }
 }
-.wp:hover{
-    transform: scale(1.1);
-}
-
 /* Index */
 /* Foto Logo Index */
 .fotoIndex{
@@ -94,9 +101,11 @@ footer{
     margin: auto;
     margin-top: 10px;
 }
-.descripcionIndex p{
-    color: white;
-}
+.descripcionIndex{
+    p{
+        color: white;
+    }
+} 
 
 /* Galeria */
 /* Productos (Cards) */
@@ -110,6 +119,9 @@ footer{
     width: 300px;
     filter: grayscale(1);
     margin-top: 50px;
+    &:hover{
+        filter: grayscale(0);
+    }
 }
 .card-body{
     position: absolute;
@@ -120,20 +132,16 @@ footer{
     opacity: 80%;
     font-size: small;
     font-style: italic;
+    &:hover{
+        opacity: 0%;
+    }
+    p{
+        color: $bg-color-rose
+    }
+    h5{
+        color: $bg-color-rose
+    }
 }
-.card-body p{
-    color: #ffdff7;
-}
-.card-body h5{
-    color: #ffdff7;
-}
-.card-body:hover{
-    opacity: 0%;
-}
-.card:hover{
-    filter: grayscale(0);
-}
-
 /* Boton Galeria */
 .div__boton__galeria{
     display: flex;
@@ -156,18 +164,18 @@ footer{
     padding: 15px;
 }
 /* Texto y Titulo */
-.titulo__quienes__somos p{
-    width: 100%;
-    border: solid 1px black;
-    padding: 15px;
-}
-.titulo__quienes__somos h2{
-    text-align: center;
-    padding: 15px;
-}
-.titulo__quienes__somos{
+.titulo__quienes__somos{ 
     margin: 0 auto;
     width: 80%;
+    h2{
+        text-align: center;
+        padding: 15px;
+    }
+    p{
+        width: 100%;
+        border: solid 1px black;
+        padding: 15px;
+    }
 }
 
 /* Contacto */
