@@ -8,10 +8,10 @@
     position: relative;
     height: 300px;
     width: 300px;
-    filter: grayscale(0);
+    filter: grayscale(1);
     margin-top: 50px;
     &:hover{
-        filter: grayscale(1);
+        filter: grayscale(0);
     }
 }
 .card-body{
